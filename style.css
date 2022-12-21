@@ -1,0 +1,1395 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    width: 100%;
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+html{
+    height: 100%;
+    width: 100%;
+   
+   
+}
+body{
+    background-color: #ccc;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+   position: relative;
+    /* background-image: none;  */
+   background-image:url(./img/background.jpg) ;
+   background-size: cover;
+   background-position: center;
+  
+     
+}
+.backgrounds{
+    opacity: 1;
+    z-index: 1000;
+}
+/* .background{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:url(./img/background.png) ;
+    background-size: cover;
+    background-position: center;
+} */
+.menu{
+   
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 18%;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+    margin: 0px;
+}
+.content{
+    width: 82%;
+    margin-left: 18%;
+  
+}
+.header-top{
+    display: flex;
+    margin: 0px 10px;
+}
+.content-top{
+    height: 30px;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #9b9696;
+    
+}
+.content-top span{
+    margin: 0px 10px;
+    font-size: 13px;
+    line-height: 20px;
+    
+}
+.header-top-search{
+    width: 130px;
+    height: 20px;
+    display: flex;
+    position: relative;
+    
+    border-radius: 2px;
+    background-color: #ccc;
+}
+.header-top-search input{
+    outline: none;
+    height: 100%;
+    width: 100%;
+    padding: 2px 5px;
+    font-size: 10px;
+    border: none;
+    background-color: #e2dddd;
+    border-radius: 3px;
+}
+.header-top-search .search{ 
+    position: absolute;
+    right:6px;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 13px;
+    
+}
+.content-logo{
+    /* background-color: #0063c6; */
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+}
+.header-top-2 a{
+    color: #9b9696;
+    margin: 0px 10px;
+}
+.header-top-2 a:nth-child(1){
+    position: relative;
+}
+.header-top-2 a:nth-child(2){
+    position: relative;
+}
+.header-top-2 a:nth-child(3){
+    position: relative;
+}
+.header-top-2 a:nth-child(1) span{
+    position: absolute;
+    top: -4px;
+    right: -16px;
+    color:red;
+}
+.header-top-2 a:nth-child(2) span{
+    position: absolute;
+    top: -4px;
+    right: -16px;
+    color:red;
+}
+.header-top-2 a:nth-child(3) span{
+    position: absolute;
+    top: -4px;
+    right: -16px;
+    color:red;
+}
+.header-top-2 a:nth-child(4){
+    margin-right: 0px;
+}
+.content-body img{
+   width: 40%;
+   height: 100%;
+   margin: 0px auto;
+}
+.content-body{
+    max-height: 100vh;
+}
+.content-add{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px;
+    padding: 0px 15px;
+}
+.add-staff{
+    padding:7px 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    background-color: #126fcb;
+    color: #fff;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    height: 15vh;
+    width: 23.5%;
+    position: relative;
+    box-shadow: 0 0 3px #333;
+}
+.add-staff a{
+    position: absolute;
+    background-color: #06b206;
+    padding: 4px;
+    border-radius: 3px;
+    color: #333;
+}
+
+.add-staff span{
+  font-size: 20px;
+  font-weight: 900;
+  position: relative;
+}
+.add-staff a{
+    position: absolute;
+    right: 10px;
+}
+ .add-staff-item{
+    width: 100%;
+    height: 15px;
+    background-color:#034281;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    cursor: pointer;
+ }
+ .add-staff.xanh{
+    background-color:#06b206;
+ }
+ .add-staff-item.white{
+    background-color:#9b9696;
+ }
+ .add-staff-item.xanh{
+    background-color: #2c8e2c;
+ }
+ .statisitcal-item.xanh{
+    background-color:#06b206;
+ }
+ .statisitcal-item.vang{
+    background-color: #e7b51e;
+ }
+ .add-staff-item.vang{
+    background-color: #bd9009;
+ }
+ .statisitcal-item.xanhlam{
+    background-color: #00FFFF;
+ }
+ .add-staff-item.xanhlam{
+    background-color: #05a8a8;
+ }
+ .add-staff-item i{
+    font-size: 13px;
+    margin:2px 0px 0px 5px;
+ }
+ .statisitcal{
+    width: 100%;
+    padding:5px 15px;
+    
+ }
+ .statisitcal-text{
+    padding: 10px;
+    width: 100%;
+    background-color:#044a91;
+    border-radius: 6px;
+    color:#fff;
+ }
+ .statisitcal-text span{
+    color:#fff;
+ }
+ .statisitcal-content{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+ }
+ .statisitcal-content.move{
+    position: relative;
+    right: -120%;
+    transition:linear 1s;
+    display: none;
+ }
+ .statisitcal-item{
+    padding: 10px 20px;
+    color: #333;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    height: 18vh;
+    width: 23.5%;
+     background-color: rgba(255, 255, 255,0.4);
+    box-shadow: 0 0 3px #333;
+ }
+ .statisitcal-chu{
+    display: flex;
+    justify-content: space-between;
+ }
+ .statisitcal-chu span{
+    font-size: 30px;
+ }
+ .statisitcal-chu p{
+    font-size: 14px;
+ }
+ .statisitcal-chu i{
+    font-size: 50px;
+    align-items: center;
+    color: rgba(0,0,0,0.2);
+ }
+ .menu-logo{
+    color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid#333;
+    display: flex;
+    align-items: center;
+ }
+.menu-logo img{
+    width: 30px;    
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 50px;
+}
+li{
+    list-style: none;
+}
+.menu-content{
+    padding-bottom: 10px;
+}
+.menu-content li{
+    margin-bottom: 6px;
+    color: #d7d7d7;
+    font-size: 13px;
+    padding: 5px 10px;
+}
+.menu-content li.move{
+    border-left: 2px solid #044a91;
+    background: rgba(0,0,0,0.2);
+}
+.menu-content li:nth-child(1){
+    color: #878787;
+    font-size: 16px;
+    font-weight: 700;
+}
+.menu-content li:nth-child(4){
+     /* margin-bottom: 0px; */
+     align-items: center;
+     position: relative;
+    
+}
+.menu-content li:nth-child(4) .staff-name{
+     width: 100%;
+}
+.menu-account-bottom.move{
+     display: none;
+}
+.menu-account-left.move{
+    display: none;
+}
+.menu-account.move{
+    display: none;
+}
+.menu-account{
+    padding: 5px 0px 0px 5px;
+    font-size: 12px;
+    color: #fff;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.menu-account p a{
+    color: #fff;
+}
+.staff-item{
+    padding: 5px 0px 0px 5px;
+    font-size: 12px;
+    color: #fff;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.staff-item.move{
+    display: none;
+}
+.staff-item p input{
+    width: 9px;
+    border: none;
+    padding-right: 5px;
+    margin-right: 5px
+}
+.staff-item p span{
+    font-size: 11px;
+}
+.staff-item p{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+}
+.menu-content li:nth-child(5){
+    
+    align-items: center;
+    position: relative;
+    margin-bottom: 0px;
+}
+.wage:checked ~ .table-salary{
+     display: block;
+}
+.table-salary{
+     padding: 5px 0px 0px 5px;
+    font-size: 12px;
+     color: #fff;
+     margin-bottom: 5px;
+     cursor: pointer;
+ }
+ .table-salary.move{
+     display: none;
+ }
+ .table-salary p{
+  display: flex;
+  align-items: center;
+  padding: 3px 0px 2px 5px
+ }
+ 
+ .table-salary p input{
+    width: 9px;
+    border: none;
+    padding-right: 5px;
+    margin-right: 5px;
+ }
+ .wage-arrow.move{
+    display: none;
+ }
+ .wage-arrow1.move{
+    display: none;
+    font-size: 12px;
+ }
+ .wage-arrow1{
+    font-size: 16px;
+ }
+ 
+ .wage-list{
+    display: flex;
+    align-items: center;
+ }
+.menu-content li:nth-child(6){
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px;
+    font-size: 20px;
+}
+.menu-content li:nth-child(7){
+   
+    position: relative;
+    margin-top: 10px;
+    font-size: 13px;
+}
+.menu-icon-bottom.move{
+    display: none;
+}
+.menu-icon-bottom{
+    font-size: 16px;
+}
+.menu-icon-left.move{
+    display: none;
+}
+.menu-word-list.move{
+    display: none;
+}
+.menu-word{
+    display: flex;
+    align-items: center;
+}
+.menu-word-list{
+    padding: 5px 0px 0px 5px;
+    font-size: 12px;
+    color: #fff;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.menu-content li input[type="radio"]{
+    width: 9px;
+    border: none;
+    padding-right: 5px;
+    margin-right: 5px;
+}
+.menu-content li p{
+    display: flex;
+    align-items: center;
+    padding: 3px 0px 2px 5px
+}
+.menu-Staff-group i{
+   font-size: 16px;
+}
+.menu-word-list p{
+    display: flex;
+    align-items: center;
+    padding: 3px 0px 2px 5px;
+}
+/* menu-taff-group */
+.menu-Staff-group{
+    display: flex;
+    align-items: center;
+}
+.menu-Staff-group-list{
+    padding: 5px 0px 0px 5px;
+    font-size: 12px;
+    color: #fff;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.menu-Staff-group-list.move{
+    display: none;
+}
+.menu-Staff-group-left.move{
+    display: none;
+}
+.menu-Staff-group-bottom.move{
+    display: none;
+}
+.menu-content li i{
+    margin-right: 5px;
+}
+.menu-content li:hover{
+    color:#fff;
+    cursor: pointer;
+}
+.menu-content li .arrow-right{
+   position: absolute;
+   right: 5px;
+}
+.menu-content li .wage-arrow2{
+    position: absolute;
+    right: 5px;
+ }
+ .wage-arrow3{
+    font-size: 14px;
+ }
+ .wage-arrow3.move{
+    display: none;
+ }
+ .wage-arrow2.move{
+    display: none;
+ }
+.board-Staff{
+    margin-top: 20px;
+    width: 550px;
+     
+    box-shadow: 0 0 3px #333;
+    padding:10px 20px;
+    border-radius: 3px;
+    background-image: url(img/download-bang-nhanvien.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.board-Staff .move{
+    color: red;
+    box-shadow: 0 0 2px red;
+}
+.board-Staff-item{
+    margin: 6px 0px;
+    display: flex;
+    align-items: center;
+}
+.board-Staff-item input{
+    border: none;
+    border-radius: 3px;
+    padding: 4px 6px;
+    outline: none;
+    box-shadow: 0 0 2px #333;
+    margin:1px 5px 1px 5px;
+    font-size: 11px;
+    width:160px;
+}
+.board-Staff-item input[type="radio"]{
+    width: 13px;
+    box-shadow: none;
+}
+
+.board-Staff-item span{
+    width: 100px;
+    float: left;
+    font-size: 13px;
+}
+.board-Staff button{
+    background: #0060c6;
+    padding: 9px 28px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    color: #ccc;
+}
+.board-Staff button:hover{
+    background-color: #03478f;
+}
+.board-Staff.move{
+    display: none;
+}
+#male,#famale{
+     box-shadow: none;
+     margin-right: 5px;
+}
+#table-info,#table-info tr,#table-info th{
+    box-shadow: 0 0 1px black;
+    padding: 15PX 0PX;
+}
+#table-info{
+    margin-top: 20px;
+     
+}
+#table-info.move{
+    display: none;
+}
+#table-info td{
+    padding: 15px 8px;
+    text-align: center;
+}
+/* #table-info td.green{
+     color: #0063c6;
+}
+#table-info td.red{
+    color: red;
+} */
+table{
+    border-collapse:collapse;
+}
+ .board-Staff-item small{
+    margin-left: 5px;
+ }
+ .infor-Member tr{
+    background-image: url(img/download-bang-nhanvien.jpg);
+    background-position:left;
+    background-size:auto;
+    opacity: 0.8;
+    color:black;
+ }
+ .edit-staff.move{
+    display: none;
+ }
+ .edit-staff tr{
+    background-image: url(img/download-bang-nhanvien.jpg);
+    background-position:left;
+    background-size:auto;
+    opacity: 0.8;
+    color:black;
+    box-shadow: 0 0 1px black;
+    padding: 15px 0px;
+ }
+ .edit-staff td{
+    padding: 15px 8px;
+    font-size: 13px;
+    font-weight: 600;
+ }
+ .edit-staff th{
+    padding: 15px 8px;
+ }
+ .edit-staff{
+    margin-top: 20px;
+    box-shadow: 0 0 1px black;
+    padding: 15PX 0PX;
+    text-align: center;
+ }
+ .home-page{
+    cursor: pointer;
+    color: rgb(110, 102, 102);
+ }
+ .home-page:hover{
+    color: black;
+ }
+ .managae-salary{
+    position: relative;
+ }
+  /* quan ly luong */
+  .table-wage{
+    position: fixed;
+    top: 25vh;
+    right: 0;
+    left: 18%;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 90;
+    overflow-y: scroll;
+    padding: 10px;
+}
+ .table-wage{
+
+ }
+.table-wage-list{
+    padding: 15px;
+    background-color: #fff;
+    border-top: 3px solid #0063c6;
+    border-radius: 3px 3px 0px 0px;
+    box-shadow: 0 0 2px #333;
+}
+.table-wage-list li{
+    padding: 5px 0px;
+}
+.table-wage-list li:nth-child(1){
+    border-bottom: 1px solid #ccc;
+}
+.table-wage-list li:nth-child(2) input{
+   background-color: #ccc;
+}
+.table-wage-list li:nth-child(8) input{
+    background-color: #ccc;
+ }
+.table-wage-list li input{
+    width: 100%;
+    border: none;
+    box-shadow: 0px 0px 2px #333;
+    border-radius: 3px;
+    outline: none;
+    padding:3px 10px;
+    margin-top: 3px;
+}
+.table-wage-list select{
+    width: 100%;
+    border: none;
+    box-shadow: 0px 0px 2px #333;
+    border-radius: 3px;
+    outline: none;
+    padding:3px 10px;
+    margin-top: 3px;
+}
+.table-wage-list li p{
+    margin-bottom: 3px;
+    font-size: 15px;
+    color: #333;
+    font-weight: 600;
+}
+.table-wage-list button{
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #126fcb;
+    color: #fff;
+    cursor: pointer;
+}
+.table-wage-list button:hover{
+    background-color: #034281;
+}
+#list-name-nv-list option{
+    padding: 10px;
+    line-height: 20px;
+}
+#list-name-nv-list{
+    display: block;
+}
+.table-wage.move1{
+   display: none;
+}
+.payroll-list{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0,0, 0.6);
+    z-index: 99;
+}
+.payroll-list.move{
+    display: none;
+}
+.payroll{
+    position: absolute;
+    background-color: #fff;
+   
+    width: 900px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    border-radius: 3px;
+    box-shadow: 0 0 3px #333;
+    overflow: hidden;
+     
+}
+.payroll table{
+   width: 100%;
+   
+    padding: 10px;
+   
+}
+.payroll table tr th{
+    padding:20px 10px;
+    boder:1px solid #333
+}
+.payroll table tr td{
+    padding: 15px 14px;
+    boder:1px solid #333;
+    margin-right: 5px;
+    text-align: center;
+}
+.payroll table tr{
+   
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #333;
+       
+}
+.total-money{
+    padding: 15px;
+    text-align: right;
+}
+@keyframes aoma{
+    0%{
+       
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+        
+    }
+    75%{
+        opacity: 0.8;
+       
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+/* tao bang cong tac */
+.table-word-bussiness{
+    position: fixed;
+    top: 25vh;
+    right: 0;
+    left: 18%;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 99;
+    overflow-y: scroll;
+    padding: 10px;
+}
+.table-word-bussiness-list{
+    padding: 15px;
+    background-color: #fff;
+    border-top: 3px solid #0063c6;
+    border-radius: 3px 3px 0px 0px;
+    box-shadow: 0 0 2px #333;
+}
+.table-word-bussiness-list li{
+    padding: 5px 0px
+}
+.table-word-bussiness-list li p{
+    margin-bottom: 3px;
+    font-size: 15px;
+    color: #333;
+    font-weight:600;
+}
+.table-word-bussiness-list li input{
+    width: 100%;
+    border: none;
+    box-shadow: 0px 0px 1px #333;
+    border-radius: 3px;
+    outline: none;
+    padding: 3px 10px;
+    margin-top: 3px;
+}
+.table-word-bussiness-list li select{
+    width: 100%;
+    border: none;
+    box-shadow: 0px 0px 1px #333;
+    border-radius: 3px;
+    outline: none;
+    padding: 3px 10px;
+    margin-top: 3px
+}
+.table-word-bussiness-list li:nth-child(2) input{
+    background-color: #ccc;
+}
+.table-word-bussiness-list button{
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #126fcb;
+    color: #fff;
+    cursor: pointer;
+}
+.table-word-bussiness.move{
+    display: none;
+}
+.green{
+    background-color: #2d8cf1;
+}
+.loatAll.move{
+    display: none;
+}
+.loatAll{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   z-index: 99;
+   animation: changeColor linear 1s infinite;
+}
+@keyframes changeColor{
+   0%{
+    filter:hue-rotate(0deg);
+   }
+   100%{
+    filter:hue-rotate(360deg);
+   }
+}
+
+.loat{
+   width:100px;
+   height: 100px; 
+   
+   border-radius: 50%;
+   border: 5px solid rgb(82, 157, 233);
+   border-bottom-color: transparent;
+   border-left-color: transparent;
+   position:relative;
+    animation: xoay 0.7s ease infinite;
+
+   
+}
+ 
+.loat::before{
+    content: "";
+    position: absolute;
+    top:30px;
+    left:30px;
+    right: 30px;
+     bottom: 30px;
+    border-radius: 50%;
+    top:15px;
+    left:15px;
+    right: 15px;
+     bottom: 15px;
+   border: 5px solid rgb(82, 157, 233);
+   border-bottom-color: transparent;
+   border-left-color: transparent;
+   animation: xoay3 0.7s infinite;
+    
+}
+.loat::after{
+    content: "";
+    position: absolute;
+    top:30px;
+    left:30px;
+    right: 30px;
+     bottom: 30px;
+    
+    border-radius: 50%;
+   border: 5px solid rgb(82, 157, 233);
+   border-bottom-color: transparent;
+   border-left-color: transparent;
+   animation: xoay2 0.7s infinite;
+    
+}
+
+@keyframes xoay{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes xoay1{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes xoay3{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-720deg);
+    }
+}
+.menu-content-user{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    background: rgba(204,204,204,0.1);
+}
+.menu-content-user img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.menu-content-user-text{
+    color: #fff;
+    font-size: 12px;
+    margin-left: 11px
+}
+.menu-content-user-text p:nth-child(1){
+    font-size: 14px;
+    font-weight: 500;
+}
+.menu-content-user-dots{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.menu-content-user-dots .user-dots{
+    
+    width: 6px;
+    height: 6px;
+    background-color: #0060c6;
+    border-radius: 50%;
+    margin:2px 3px 0px 0px;
+}
+.header-top-2{
+    display: flex;
+    margin-right: 5px;
+    line-height: 30px;
+}
+.header-top-2 small{
+    margin-left: 3px;
+    cursor: pointer;
+
+}
+.searchStaff{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0,0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchStaff-list input{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    box-shadow: 0 0 2px #333;
+    border-radius: 3px;
+    font-size: 16px;
+    margin: 0px auto;
+   padding-left: 30px;
+}
+.searchStaff-list{
+    width: 70vh;
+    height: 60vh;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+   overflow-y: scroll;
+   margin: 20px auto;
+}
+.searchStaff-list h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.searchStaff-list i{
+    position: absolute;
+    top: 50%;
+    left: 7px;
+    font-size: 16px;
+    color: #333;
+    transform: translateY(-50%)
+}
+.searchStaff-list-input{
+    position: relative;
+    width: 100%;
+   
+}
+.searchStaff-item{
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid#333;
+    margin: 10px 0px;
+}
+.searchStaff-item.move{
+    display: none;
+}
+.searchStaff-item:hover{
+    background-color: #ccc;
+}
+::-webkit-scrollbar {
+
+    width: 1px; 
+    
+    }
+    .searchStaff.active{
+        display: none;
+    }
+    #table-searchStaff{
+       width: 85vw;
+       background-color: #fff;
+       box-shadow: 0 0 1px black;
+    padding: 15PX 0PX;
+    }
+    #table-searchStaff tr{
+        box-shadow: 0 0 1px black;
+        background-image: url(img/download-bang-nhanvien.jpg);
+        background-position: left;
+        background-size: auto;
+        opacity: 0.8;
+        color: black;
+    }
+    #table-searchStaff th{
+        box-shadow: 0 0 1px black;
+        padding: 15PX 0PX;
+    }
+    #table-searchStaff td{
+        padding: 15px 8px;
+        text-align: center;
+    }
+    #table-searchStaff.move{
+        display:none;
+    }
+    .style-SuaStaff{
+        
+        background-color: rgb(233, 162, 9);
+        padding:7px 5px;
+        color:#fff;
+    }
+    .style-DeleteStaff{
+        background-color: rgb(245, 0, 135);
+        padding:7px 5px;
+        color:#fff;
+    }
+    .comeBack{
+       position: absolute;
+        left: 20px;
+        top:10px;
+       
+        width: 60px;
+        height: 60px;
+    }
+    .menu-business-comeBack{
+        position: absolute;
+        left: 20px;
+        top:10px;
+        width: 60px;
+        height: 60px;
+    }
+    .menu-business-comeBack img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .comeBack img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .comeBack.move{
+        display: none;
+    }
+    /* <!-- bang nhan vien cong tac --> */
+    .menu-business{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0, 0,0, 0.8);
+        z-index: 99;
+    }
+    .menu-business.move{
+        display: none;
+    }
+    .menu-business-list{
+        position: absolute;
+        background-color: #fff;
+        width: 900px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        border-radius: 3px;
+        box-shadow: 0 0 3px #333;
+        overflow: hidden;
+    }
+    .menu-business-list table{
+        width: 100%;
+        padding: 10px;
+    }
+    .menu-business-list table tr{
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #333
+    }
+    .menu-business-list table th{
+        padding: 20px 10px;
+    }
+    .menu-business-list table td{
+        padding: 15px 14px;
+        boder: 1px solid #333;
+        margin-right: 5px;
+        text-align: center
+    }
+    /* bang tao nhom nhan vien */
+    .table-taffTeams{
+        position: fixed;
+        top: 25vh;
+        right: 0;
+        left: 18%;
+        bottom: 0;
+        background-color: #fff;
+        z-index: 99;
+        overflow-y: scroll;
+        padding: 10px;
+    }
+    .table-taffTeams.move{
+        display: none;
+    }
+    .table-taffTeams-list{
+        padding: 15px;
+        background-color: #fff;
+        border-top: 3px solid #0063c6;
+        border-radius: 3px 3px 0px 0px;
+        box-shadow: 0 0 2px #333;
+    }
+    .table-taffTeams-list li{
+        padding: 5px 0px;
+    }
+    .table-taffTeams-list li input{
+        width: 100%;
+        border: none;
+        box-shadow: 0px 0px 1px #333;
+        border-radius: 3px;
+        outline: none;
+        padding: 3px 10px;
+        margin-top: 3px
+    }
+    .table-taffTeams-list button{
+        padding: 10px 20px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #126fcb;
+        color: #fff;
+        cursor: pointer;
+    }
+#table-taffTeams-code,#table-taffTeams-admin{
+    background-color: #ccc;
+}
+.table-taffTeamsALL{
+    position: fixed;
+    top: 25vh;
+    right: 0;
+    left: 18%;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 99;
+    overflow-y: scroll;
+    padding: 10px
+}
+.table-taffTeamsALL.move{
+    display: none;
+}
+.table-taffTeamsALL h3{
+    padding:0 0 10px 10px;
+}
+.table-taffTeamsALL-menu{
+    padding: 15px;
+    background-color: #fff;
+    border-top: 3px solid #0063c6;
+    border-radius: 3px 3px 0px 0px;
+    box-shadow: 0 0 2px #333;
+    display: flex;
+    
+}
+.table-taffTeamsALL-content{
+   
+    background-color: #0060c6;
+    width: 25%;
+    color: #fff;
+    margin-right: 20px;
+}
+.table-taffTeamsALL-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.table-taffTeamsALL-list p{
+    font-size: 14px;margin-top: 3px;
+}
+.table-taffTeamsALL-list span{
+    font-weight: 700;
+}
+.table-taffTeamsALL-list i{
+    font-size: 50px;
+    color:#ccc;
+}
+.table-taffTeamsALL-xoa{
+    text-align: center;
+   
+    border-top: 1px solid #333;
+    padding: 3px;
+}
+.menu-searchStaff-comeBack{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 60px;
+    height: 60px
+}
+.menu-searchStaff-comeBack img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.table-department{
+    position: fixed;
+    top: 25vh;
+    right: 0;
+    left: 18%;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 99;
+    overflow-y: scroll;
+    padding: 10px;
+}
+.table-department.move{
+    display: none;
+}
+.table-department-list{
+    padding: 15px;
+    background-color: #fff;
+    border-top: 3px solid #0063c6;
+    border-radius: 3px 3px 0px 0px;
+    box-shadow: 0 0 2px #333;
+}
+.table-department-list li{
+    padding: 5px 0px;
+}
+.table-department-list li input{
+    width: 100%;
+    border: none;
+    box-shadow: 0px 0px 1px #333;
+    border-radius: 3px;
+    outline: none;
+    padding: 3px 10px;
+    margin-top: 3px
+}
+.table-department-list button{
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #126fcb;
+    color: #fff;
+    cursor: pointer;
+}
+#table-department-code,#table-department-admin{
+background-color: #ccc;
+}
+.table-departmentALL{
+    position: fixed;
+    top: 120px;
+    right: 0;
+    left: 18%;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 99;
+    overflow-y: scroll;
+    padding: 10px
+}
+.table-departmentALL.move{
+    display: none;
+}
+.table-departmentALL-menu{
+    padding: 15px;
+    background-color: #fff;
+    border-top: 3px solid #0063c6;
+    border-radius: 3px 3px 0px 0px;
+    box-shadow: 0 0 2px #333;
+    display: flex;
+    flex-wrap: wrap;
+}
+.table-departmentALL h3{
+    padding: 0 0 10px 10px;
+}
+.table-departmentALL-content{
+    background-color: #0060c6;
+    width: 25%;
+    color: #fff;
+    margin:0px 20px 15px 0px;
+}
+.table-departmentALL-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.table-departmentALL-list i{
+    font-size: 50px;
+    color: #ccc;
+}
+.table-departmentALL-item{
+
+}
+.table-departmentALL-xoa{
+    text-align: center;
+    border-top: 1px solid #333;
+    padding: 3px
+}
+.table-department-clone{
+    position: absolute;
+    top:20px;
+    right: 25px;
+    cursor: pointer;
+}
+.table-department-clone i{
+    font-size: 30px;
+    color: #0060c6;
+}
+/* giang vien giang vien cao cap truong phong pho phong */

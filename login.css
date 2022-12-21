@@ -1,0 +1,235 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    background-image: url(./img/background-dangnhap.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.wapper{
+    margin: auto ;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 3px;
+    padding: 13px;
+}
+.wapper-heading{
+    text-align: center;
+     
+}
+.wapper-heading{
+    font-size: 21px;
+    color: #fff;
+}
+form{
+    text-align: center;
+    margin: 16px 0px;
+}
+
+.input__field{
+    margin: 6px 0px;
+}
+.input__field input{
+    width: 200px;
+    padding: 5px;
+      
+    border:1px solid #7bd67b;
+    border-radius: 3px;
+    outline: none;
+    font-size: 10px;
+    height: 25px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+.btn-login{
+    margin-top: 10px;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    background-color: #7bd67b;
+    color: #fff;
+    width: 200px;
+}
+.btn-login:hover{
+    background-color: #2de12d;
+}
+.signup-link{
+    
+}
+.btn-signup{
+    display:flex;
+     float: right;
+     margin:10px 20px;
+     background-color: transparent;
+     border: none;
+}
+.btn-signup a{
+    text-decoration: none;
+    color:#7bd67b;
+}
+.loatAll.move{
+    display: none;
+}
+.loatAll{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   z-index: 99;
+   animation: changeColor linear 1s infinite;
+}
+@keyframes changeColor{
+   0%{
+    filter:hue-rotate(0deg);
+   }
+   100%{
+    filter:hue-rotate(360deg);
+   }
+}
+
+.loat{
+   width:100px;
+   height: 100px; 
+   
+   border-radius: 50%;
+   border: 5px solid rgb(82, 157, 233);
+   border-bottom-color: transparent;
+   border-left-color: transparent;
+   position:relative;
+    animation: xoay 0.7s ease infinite;
+
+   
+}
+ 
+.loat::before{
+    content: "";
+    position: absolute;
+    top:30px;
+    left:30px;
+    right: 30px;
+     bottom: 30px;
+    border-radius: 50%;
+    top:15px;
+    left:15px;
+    right: 15px;
+     bottom: 15px;
+   border: 5px solid rgb(82, 157, 233);
+   border-bottom-color: transparent;
+   border-left-color: transparent;
+   animation: xoay3 0.7s infinite;
+    
+}
+.loat::after{
+    content: "";
+    position: absolute;
+    top:30px;
+    left:30px;
+    right: 30px;
+     bottom: 30px;
+    
+    border-radius: 50%;
+   border: 5px solid rgb(82, 157, 233);
+   border-bottom-color: transparent;
+   border-left-color: transparent;
+   animation: xoay2 0.7s infinite;
+    
+}
+
+@keyframes xoay{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes xoay1{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes xoay3{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-720deg);
+    }
+}
+.divOpeningIntro{
+    position: fixed;
+    z-index: 9999;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 1);
+   
+}
+.divOpeningIntro.move{
+    animation:height 4s ease;
+    height: 0%; 
+   
+}
+  .divOpeningIntro-list{
+    position: absolute;
+    left: -100%;
+    top:50%;
+    color:#fff;
+    text-align: center;
+    line-height: 40px;
+}
+.divOpeningIntro-list.move{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    /* transform: translateX(-50%); */
+    top:50%;
+    left: 50%;
+    transition: 4s ease;
+}
+
+.divOpeningIntro-list.active{
+    top:-50vh;
+    transition:5s ease;
+}
+.divOpeningIntro-list h1{
+    color: #ffcb6b;
+}
+.divOpeningIntro-list h2{
+    color:#0066ff;
+}
+@keyframes move{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes height{
+    0%{
+        height: 100%;
+    }
+    100%{
+        height: 0%;
+       
+    }
+}

@@ -781,7 +781,6 @@ function totalSraffs(total){
                searchStaffList.appendChild(searchStaffItemDIV)
           searchStaffInput.addEventListener('input',function(e){
                   var txtSearch= e.target.value.trim().toLowerCase();
-                 
                   if(stt.fullname.toLowerCase().includes(txtSearch)){
                      searchStaffItemDIV.classList.remove('move')
                   }else{
@@ -799,6 +798,7 @@ function totalSraffs(total){
           stt.addEventListener('click',function(e){
             tableSearchStaff.classList.remove('move')
            var ducdz= stt.querySelector('.searchStaff-item-p').innerHTML;
+           
             listStaffs.forEach(function(id){
                
                if(id.fullname==ducdz){
@@ -942,5 +942,11 @@ var clone=document.querySelectorAll('.table-department-clone')
       })
     })
      
+var tablePosition=document.querySelector('.table-position')
+var positionOpen=document.querySelector('.position-open')
+       positionOpen.addEventListener('click',function(e){
+         console.log('ducdz')
+        
+         tablePosition.classList.toggle('move1')
+       })
 
-      

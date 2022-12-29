@@ -647,6 +647,58 @@ table{
  .managae-salary{
     position: relative;
  }
+ /* them chuc vu */
+ .table-position{
+    position: fixed;
+    top: 25vh;
+    right: 0;
+    left: 18%;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 90;
+    overflow-y: scroll;
+    padding: 10px;
+ }
+ .table-position.move1{
+    display: none;
+ }
+ .table-position-list{
+    padding: 15px;
+    background-color: #fff;
+    border-top: 3px solid #0063c6;
+    border-radius: 3px 3px 0px 0px;
+    box-shadow: 0 0 2px #333;
+ }
+ .table-position-list li{
+    padding: 5px 0px;
+ }
+ .table-position-list li input{
+    width: 100%;
+    border: none;
+    box-shadow: 0px 0px 2px #333;
+    border-radius: 3px;
+    outline: none;
+    padding:3px 10px;
+    margin-top: 3px;
+ }
+ .table-position-list select{
+    width: 100%;
+    border: none;
+    box-shadow: 0px 0px 2px #333;
+    border-radius: 3px;
+    outline: none;
+    padding:3px 10px;
+    margin-top: 3px;
+ }
+ .table-position-list button{
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #126fcb;
+    color: #fff;
+    cursor: pointer;
+ }
   /* quan ly luong */
   .table-wage{
     position: fixed;
@@ -660,7 +712,7 @@ table{
     padding: 10px;
 }
  .table-wage{
-
+   
  }
 .table-wage-list{
     padding: 15px;

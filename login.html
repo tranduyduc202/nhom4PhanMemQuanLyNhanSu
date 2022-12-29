@@ -42,7 +42,7 @@
                              
                              <p class="menu-EditStaff"><input type="radio" name="wage"> <span class="salary">Sửa xóa nhân viên</span></p>
                              <p class="menu-InfoStaff"><input type="radio" name="wage"> <span>thông tin Nhân viên</span> <br></p>
-                             <p ><input type="radio" name="wage"> <span>Chức vụ</span> <br></p>
+                             <p class="position-open"><input type="radio" name="wage"> <span>Chức vụ</span> <br></p>
                              <p ><input type="radio" name="wage"> <span>Trình độ</span> <br></p>
                         </div>
     
@@ -311,6 +311,37 @@
                             </li>
                             <li> <p>Người Tạo</p> <input type="text" id="table-wage-admin" value="admin" placeholder="admin"></li>
                             <button class="btn-wage">Tính Lương Nhân Viên</button>
+                        </ul>
+                        <div class="table-department-clone">
+                            <i class="fa-solid fa-rectangle-xmark"></i>
+                        </div>
+                     </div>
+                      <!-- quan chức vụ -->
+                      <div class="table-position move1">
+                        <ul class="table-position-list">
+    
+                            <li><h3>Thêm chức Vụ</h3></li>
+                            <li><p>Mã</p><input  type="text" id="table-position-code" value="6868" placeholder="6868"></li>
+                            <li class="position-name">
+                                 <p> Họ Tên</p> 
+                                <input type="number" id="word-day" placeholder="nhập họ tên">
+                            </li>
+                            <li class="list-name-position">
+                                <p>Chức vụ</p>
+                                <select name="" id="list-name-position-list">
+                                    <option value="--chon chức vụ--">--Chọn chức vụ--</option>
+                                     <option value="">giảng viên</option>
+                                     <option value="">giảng viên cao cấp</option>
+                                     <option value="">trưởng phòng</option>
+                                     <option value="">phó phòng</option>
+                                </select>
+                            </li>
+                            <li>
+                                <p>Ngày vào</p>
+                                <input type="date" id="date">
+                            </li>
+                            <li> <p>Người Tạo</p> <input type="text" id="table-wage-admin" value="admin" placeholder="admin"></li>
+                            <button class="btn-wage">Lưu thông tin</button>
                         </ul>
                         <div class="table-department-clone">
                             <i class="fa-solid fa-rectangle-xmark"></i>

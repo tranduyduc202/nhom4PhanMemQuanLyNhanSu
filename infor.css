@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    display: flex;
+   margin: auto;
+   justify-content: center;
+   position: relative;
+   height: 100vh;
+}
+
+.infor-content{
+    width: 90vw;
+    box-shadow: 0 0  3px #333;
+    border-radius: 6px;
+    padding: 20px;
+    position: absolute;
+    top:40%;
+    transform: translateY(-50%);
+   margin: auto;
+    margin-bottom: 20px;
+   
+}
+.search-table{
+    position: absolute;
+    top:67px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #ccc;
+    box-shadow: 0 0 3px #333;
+    border-radius: 9px;
+    height: 100px;
+    width: 41%;
+    padding: 10px;
+    height: 300px;
+    overflow-y: scroll;
+}
+.search-table::-webkit-scrollbar {
+    width: 1px;
+   
+} 
+.search-table-input{
+    padding:0px 10px 10px 10px;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    position: relative;
+}
+.search-table-input input{
+    width: 100%;
+    padding:10px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.search-table-input .search-icon{
+    position: absolute;
+    top: 4%;
+    /* width: 50px; */
+    font-size: 20px;
+    right: 20px;
+    padding: 0;
+    /* transform: translateY(-50%); */
+}
+
+.infor-content h2{
+    padding: 10px;
+}
+.infor-table{
+  
+    width: 100%;
+    border: 1px solid #333 ;
+    
+     border-collapse:collapse;
+    
+}
+.infor-table .first-row{
+    border: 1px solid #333;
+    background-color: #ccc;
+    height: 40px;
+}
+.infor-table td{
+    text-align: center;
+    padding: 10px 0px;
+    height: 40px;
+    border-left: 1px solid #333;
+}
+.infor-content i{
+     position: absolute;
+     top:15px;
+     right: 10px;
+     padding: 10px;
+     font-size: 40px;
+     font-weight: 900;
+     cursor: pointer;
+}
+.infor-content i.move{
+    display: none;
+}
+.infor-tr{
+    border: 1px solid #333;
+}
+.search-table.move{
+    display: none;
+}
+.search-table-list{
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    cursor: pointer;
+}
+.search-table-list.move{
+    display: none;
+}
+.search-table-list:hover{
+    background-color: rgb(135, 132, 132);
+}
+.search-table-list span{
+    
+}
+.menu-searchStaff-comeBack {
+    position: absolute;
+    left: 7px;
+    top: 10px;
+    width: 60px;
+    height: 60px;
+}
+.menu-searchStaff-comeBack img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

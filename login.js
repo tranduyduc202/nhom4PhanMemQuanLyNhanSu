@@ -48,3 +48,9 @@ function divOpeningIntro(){
      
       
 }
+var chooseNv=document.querySelector('.choose-nv ')
+var chooseAdmin=document.querySelector('.choose-admin')
+    chooseAdmin.addEventListener('click',function(){
+      loading()
+      chooseNv.classList.add('move')
+    })
